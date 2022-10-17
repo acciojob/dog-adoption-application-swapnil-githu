@@ -9,30 +9,46 @@
 <body>
 	<!-- the entire body must be written by student -->
 
-	<form>
-		<input type="text" id="name" placeholder="Name">
-		<br><br>
-		<input type="text" id="address"  placeholder="Enter your address here">
-		<br><br>
-		<input type="text" id="phone" size="10" maxlength="10" placeholder= "Phone Number">
-
-	<br><br>
-	
-	<label for="checkbox">have you ever lived with a dog before?</label>
-		<input type="checkbox" id="checkbox">
-			
-	
-	<br><br>
-
-		<label >Select Breeds :</label>
-
-		<select name="breed" id="multiselect">
-			<option value="husky">husky</option>
-			<option value="G.shepard">G.shepard</option>
-			<option value="labrador">labrador</option>
-		</select>
-
-	 <br><br>
+	<form action="">
+		<!-- name -->
+	   
+			   <div>
+				   <label for="name" >Name:</label>
+				   <input type="text" id="name" placeholder="Name">
+			   </div><br>
+	   
+	   <!-- email / phone /-->
+	   
+			   <div>
+				   <label for="phone">Phone Number: </label>
+				   <input type="tel" id="phone" placeholder="phone Number">
+				   </div><br>
+			   
+	   <!-- address  -->
+	   
+			   <div>
+				   <label for="address">Address: </label>
+				   <input type="text" id="address" placeholder="Address">
+	   
+			   </div><br>
+			   
+	   <!-- why dog? -->
+	   
+			   <div>
+				   <label for="checkbox">Have you ever lived with a Dog before?:</label>
+				   <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
+					   
+			   </div><br>
+	   
+			   <div>
+				   <label for="multiselect">please select your preferred Breed:</label>
+				   <select name="multiselect" id="multiselect" multiple>
+				   <option value="husky">husky</option>
+				   <option value="G.shepard">G.shepard</option>
+				   <option value="labrador">labrador</option>
+				   <option value="poodle">poodle</option>
+				   </select>
+				</div><br>
 	 
 		<button type="submit" id="submit">Submit</button>
 	
